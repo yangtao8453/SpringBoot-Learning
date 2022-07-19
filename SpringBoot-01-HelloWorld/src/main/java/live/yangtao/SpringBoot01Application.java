@@ -1,15 +1,9 @@
 package live.yangtao;
 
-import live.yangtao.config.MyConfig;
-import live.yangtao.domain.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Conditional;
 import org.springframework.web.filter.CharacterEncodingFilter;
-
-import java.util.Arrays;
 
 /**
  * @author yangtao

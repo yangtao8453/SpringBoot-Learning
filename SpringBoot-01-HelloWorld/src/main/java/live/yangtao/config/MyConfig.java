@@ -1,11 +1,9 @@
 package live.yangtao.config;
 
-import live.yangtao.domain.User;
+import live.yangtao.domain.po.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -33,7 +31,7 @@ public class MyConfig {
         return new User(2, "tony");
     }
 
-    @ConditionalOnMissingClass({"live.yangtao.domain.User"})
+    @ConditionalOnMissingClass({"live.yangtao.domain.po.User"})
     @Bean("pony")
     public User user03() {
         return new User(3, "pony");

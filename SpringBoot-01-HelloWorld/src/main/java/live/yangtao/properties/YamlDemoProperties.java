@@ -1,6 +1,6 @@
 package live.yangtao.properties;
 
-import live.yangtao.domain.User;
+import live.yangtao.domain.po.User;
 import lombok.Data;
 import lombok.ToString;
 import org.springframework.boot.context.properties.ConfigurationProperties;

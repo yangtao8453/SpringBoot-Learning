@@ -10,16 +10,16 @@ import org.springframework.web.filter.CharacterEncodingFilter;
  * @description
  * @create 2022-07-14 23:38
  */
-@Configuration
-public class MyEncodingConfig {
-
-    @Bean
-    public CharacterEncodingFilter characterEncodingFilter() {
-        CharacterEncodingFilter filter = new CharacterEncodingFilter();
-        filter.setEncoding("GBK");
-        // 拦截器设置的编码覆盖现有的编码（请求和响应）
-        filter.setForceEncoding(true);
-        return filter;
-    }
-
-}
+//@Configuration
+//public class MyEncodingConfig {
+//
+////    @Bean
+////    public CharacterEncodingFilter characterEncodingFilter() {
+////        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+////        filter.setEncoding("UTF-8");
+////        // 拦截器设置的编码覆盖现有的编码（请求和响应）
+////        filter.setForceEncoding(true);
+////        return filter;
+////    }
+//
+//}

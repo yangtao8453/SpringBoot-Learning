@@ -1,4 +1,4 @@
-package live.yangtao.domain;
+package live.yangtao.domain.po;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
